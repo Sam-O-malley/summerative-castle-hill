@@ -1,0 +1,36 @@
+.fastScroll{
+    height : 100vh;
+    /*overflow: hidden;*/
+}
+#fastScrollsection{
+    height : 50vh;
+}
+/*     #fastScroll section h1{
+    margin:0;
+    padding:0;
+    text-align: center;
+    line-height: 100vh;
+    font-size:10em;
+    text-transform: uppercase;
+}*/
+
+   .fastScroll section:nth-child(1) {
+  /*  background: url('images/guestOne.png');*/
+    background-size:cover;
+}
+
+.fastScroll section:nth-child(2) {
+ /*   background: url('images/guestOne.png');*/
+    background-size:cover;
+}
+#fastScroll section:nth-child(3) {
+    /*background: url('images/guestTwo.png');*/
+    background-size:cover;
+
+}
+
+  #fastScroll section:nth-child(4) {
+    /*background: url('images/guestTwo.png');*/
+    background-size:cover;
+
+}

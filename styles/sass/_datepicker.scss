@@ -1,36 +1,11 @@
-
-.dateContainer{
-	padding-bottom:10%;
-	margin: auto;
-	padding: 18% ;
-	/*display: inline-flex;*/
-	width:90%;
-	    margin-left: 14%;
-	   resize: vertical;
-	
+.datepicker_container{
+border:solid 1px black;
+margin-top:20%;
 
 }
-.para{
-	width:90%;
-	margin:auto;
-}
-.container-button{
-	width:60%;
-	margin-left:30%;
-	resize: vertical;
-}
-
 .datepickers{
-width: 20%; 
-height: 50px;
-margin-right:25%;
-opacity: 0.6%;
-text-align: center;
-border-radius: 3%;
-background-color:transparent;
-/*font-color:white;*/
-font-family: 'Comfortaa', cursive;
-    outline: none;
+  text-align: center;
+  border-radius:3%;
 }
 
 
@@ -47,7 +22,7 @@ font-family: 'Comfortaa', cursive;
   width: 0;
 }
 
-#datepicker1:hover { 
+#datepicker1, #datepicker2:hover { 
   background-color: white;
   cursor: pointer;
   -webkit-transition: background-color 2s ease-out;
@@ -56,145 +31,30 @@ font-family: 'Comfortaa', cursive;
   transition: background-color 2s ease-out;
 }
 
-#datepicker2:hover{
-    background-color: white;
-  cursor: pointer;
-  -webkit-transition: background-color 2s ease-out;
-  -moz-transition: background-color 2s ease-out;
-  -o-transition: background-color 2s ease-out;
-  transition: background-color 2s ease-out;
-}
-
 
 #confirmInfo:hover{
-  transition: 0.3s;
- background-color: transparent;
- opacity: 0.6;
+transition: 0.3s;
+background-color: transparent;
+opacity: 0.6;
 
 }
-
-#confirmInfo{
-	height:50px;
-	margin-left: -7.5%;
-	background-color: transparent;
-	border-color: lightblue;
-    box-shadow: none;
-    color:white;
+#confirmInfo {
+  height: 40px;
+  background-color: grey;
+  border-color: lightblue;
+  box-shadow: none;
+  color: white;
+  margin-top: 30%;
 }
 
 #confirmInfo:hover{
-      background-color: white;
-  cursor: pointer;
-  -webkit-transition: background-color 2s ease-out;
-  -moz-transition: background-color 2s ease-out;
-  -o-transition: background-color 2s ease-out;
-  transition: background-color 2s ease-out;
+background-color: white;
+cursor: pointer;
+-webkit-transition: background-color 2s ease-out;
+-moz-transition: background-color 2s ease-out;
+-o-transition: background-color 2s ease-out;
+transition: background-color 2s ease-out;
 }
-
-
-
-
-
-@media (min-width:320px) and (max-width: 568px) {
-
-.dateContainer{
-	padding-bottom:10%;
-	margin: auto;
-	padding: 20% ;
-	/*display: inline-flex;*/
-	width:100%;
-/*	margin-left:12%;*/
-	    resize: vertical;
-}
-
-.datepickers{
-    width: 60%;
-    height: 20px;
-    margin-left: 23%;
-    display: inherit;
-    margin-top: 26%;
-    padding: 6%;
-
-
-}
-
-
-#confirmInfo {
-      /* width: 100px; */
-    height: 50px;
-    margin: 20px auto;
-    /* margin: auto; */
-    margin-left: -13%;
-    background-color: transparent;
-    border-color: lightblue;
-    box-shadow: none;
-    color: white;
-    font-size: 20px;
-}
-
-
-}
-
-
-@media (min-width:768px) and (max-width: 1024px) {
-
-
-#confirmInfo{
-	width:100px;
-	height:50px;
-/*	margin:20px auto;*/
-	margin-left: -11.5%;
-	background-color: transparent;
-	border-color: lightblue;
-    box-shadow: none;
-    color:white;
-}
-
-
-.dateContainer {
-    padding-bottom: 10%;
-    margin: auto;
-    /* display: inline-flex; */
-    width: 100%;
-    margin-left: 11%;
-    resize: vertical;
-    padding-top: 40%;
-}
-
-
-
-
-
-
- }
-
-@media (min-width:320px) and (max-width: 568px) {
-  
-#datepicker1{
-  margin-left:20%;
-}
-
-#datepicker2{
-  margin-left:20%;
-}
-
-
-#confirmInfo {
-    /* width: 100px; */
-    height: 50px;
-    margin: 20px auto;
-    /* margin: auto; */
-    margin-left: -14%;
-    background-color: transparent;
-    border-color: lightblue;
-    box-shadow: none;
-    color: white;
-    font-size: 20px;
-}
-
-
-}
-
 
 
 

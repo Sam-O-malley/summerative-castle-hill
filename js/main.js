@@ -6,134 +6,126 @@ $("#wrapperGuest").hide();
 $("#wrapperDate").hide();
 $("#wrapperConfirm").hide();
 $("#wrapperMap").hide();
+$(".fastScroll").fullpage();
 
-  $(".fastScroll").fullpage();
-  
-  $("#DateBack").click(function() {
-     $("#wrapperGuest").show();
-    $("html, body, #wrapperDate").animate({
-        scrollTop: $("#wrapperGuest").offset().top
-    },1500);
-    // $("#wrapperDate").hide(0);
+$("#DateBack").click(function() {
+$("#wrapperGuest").show();
+$("html, body, #wrapperDate").animate({
+scrollTop: $("#wrapperGuest").offset().top
+},1500);
+// $("#wrapperDate").hide(0);
 });
+
 
 
 
 $("#confirmBack").click(function() {
-     $("#wrapperDate").show();
-     $("html, body, #wrapperConfirm").animate({
-         scrollTop: $("#wrapperDate").offset().top
-     }, 1500);
-      // $("#wrapperConfirm").hide(0);
+$("#wrapperDate").show();
+$("html, body, #wrapperConfirm").animate({
+scrollTop: $("#wrapperDate").offset().top
+}, 1500);
+// $("#wrapperConfirm").hide(0);
 });
 
+});
 
-
-
- });
 
 var days, guests, price, mealPrice;
 
 $("#datepicker1").datepicker({ 
-    dateFormat: "yy-mm-dd",
-    changeMonth: true,
-    minDate: new Date(),
-    maxDate: "+1y",
-    onSelect: function(date){
+dateFormat: "yy-mm-dd",
+changeMonth: true,
+minDate: new Date(),
+maxDate: "+1y",
+onSelect: function(date){
 
-        var selectedDate = new Date(date);
-        var msecsInADay = 86400000;
-        var stDate = new Date(selectedDate.getTime() + msecsInADay);
+var selectedDate = new Date(date);
+var msecsInADay = 86400000;
+var stDate = new Date(selectedDate.getTime() + msecsInADay);
 
-       //Set Minimum Date of EndDatePicker After Selected Date of StartDatePicker
-        $("#datepicker2").datepicker( "option", "minDate", stDate );
-        var enDate = new Date(selectedDate.getTime() + 15 * msecsInADay);
+//Set Minimum Date of EndDatePicker After Selected Date of StartDatePicker
+$("#datepicker2").datepicker( "option", "minDate", stDate );
+var enDate = new Date(selectedDate.getTime() + 15 * msecsInADay);
 
 
-        $("#datepicker2").datepicker( "option", "maxDate", enDate );
-    }
+$("#datepicker2").datepicker( "option", "maxDate", enDate );
+}
 
 });
 
- 
+
 $("#datepicker2").datepicker({ 
-    dateFormat: "yy-mm-dd",
-    changeMonth: true
+dateFormat: "yy-mm-dd",
+changeMonth: true
 });
 
 //Find the number of days between dates
-   function dateConfirm() {
-    
-    var start = $("#datepicker1").datepicker("getDate");
-    var end = $("#datepicker2").datepicker("getDate");
-     days   = (end - start)/1000/60/60/24;
-    
+function dateConfirm() {
 
-    document.getElementById("NumDaysStaying").value = days ;
-    console.log(days);
-    if (days == 0) {
-      $.alert({
-    title: 'Alert!',
-    content: 'please enter dates',
-  });
-      // alert ("please enter dates");
-      $("#datepicker1").focus();
-      $( "#confirmInfo" ).click(function( event ) {
-          event.preventDefault();
-          $("#wrapperDate").show();
-          // $("#wrapperConfirm").hide();
-        });
-      
-    } else {
-       
-     
+var start = $("#datepicker1").datepicker("getDate");
+var end = $("#datepicker2").datepicker("getDate");
+days   = (end - start)/1000/60/60/24;
+
+
+document.getElementById("NumDaysStaying").value = days ;
+console.log(days);
+if (days == 0) {
+$.alert({
+title: 'Alert!',
+content: 'please enter dates',
+});
+// alert ("please enter dates");
+$("#datepicker1").focus();
+$( "#confirmInfo" ).click(function( event ) {
+event.preventDefault();
+$("#wrapperDate").show();
+// $("#wrapperConfirm").hide();
+});
+
+} else {
+
+
 $("#confirmInfo").click(function() {
-     $("#wrapperConfirm").show();
-    $("html, body, #wrapperDate").animate({
-        scrollTop: $("#wrapperConfirm").offset().top
-    }, 1500);
-    // $("#wrapperDate").hide(0);
+$("#wrapperConfirm").show();
+$("html, body, #wrapperDate").animate({
+scrollTop: $("#wrapperConfirm").offset().top
+}, 1500);
+// $("#wrapperDate").hide(0);
 
 });
 
- };
+};
 
 
- $("#mapBack").click(function() {
-     $("#wrapperConfirm").show();
-    $("html, body, #wrapperMap").animate({
-        scrollTop: $("#wrapperConfirm").offset().top
-    }, 1500);
-        // $("#wrapperMap").hide(0);
+$("#mapBack").click(function() {
+$("#wrapperConfirm").show();
+$("html, body, #wrapperMap").animate({
+scrollTop: $("#wrapperConfirm").offset().top
+}, 1500);
+// $("#wrapperMap").hide(0);
 });
 
- 
-  }
 
+}
 
-
-
-$("#button__opening").click(function() {
-     $("#wrapperGuest").show();
-    $("html, body, #wrapperOpening").animate({
-        scrollTop: $("#wrapperGuest").offset().top
-        }, 1500);
-     // $("#button__opening").hide(0);
+$("#wrapperOpening").click(function() {
+$("#wrapperGuest").show();
+$("html, body, #wrapperOpening").animate({
+scrollTop: $("#wrapperGuest").offset().top
+}, 1500);
+// $("#button__opening").hide(0);
 
 });
 
 
 
 $(".guestNum ").click(function() {
-     $("#wrapperDate").show();
-    $("html, body , #wrapperGuest").animate({
-      scrollTop: $("#wrapperDate").offset().top
-    }, 1500);
-      // $("#wrapperGuest").hide(0);
+$("#wrapperDate").show();
+$("html, body , #wrapperGuest").animate({
+scrollTop: $("#wrapperDate").offset().top
+}, 1500);
+// $("#wrapperGuest").hide(0);
 });
-
-
-
 
 
 
@@ -615,7 +607,5 @@ marker[i].addListener('click', function(e) {
   
 }
     
-
-
 
 

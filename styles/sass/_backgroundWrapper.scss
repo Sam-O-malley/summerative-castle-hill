@@ -1,134 +1,100 @@
-    body {
-      overflow-y:hidden
+body {
+overflow-y:hidden
 }
 
-element.style {
-   position: absolute;
-    overflow: hidden;
+// element.style {
+// position: absolute;
+// overflow: hidden;
+// }
+
+.fullpageSpread{
+height:100vh;
+overflow-y:hidden;    
 }
-    .fullpageSpread{
-        height:100vh;
-           overflow-y:hidden;
-         
-    }
+
+
 #carousel__opening{
-  position: absolute; 
-  height: 100%;
+position: absolute; 
+height: 100%;
+width: 100%;
+// margin: auto;
 }
-    #wrapperSlide1{
-    background-image: url("../../images/openingimage.jpg");
-    background-size: cover;
-    width:100%;
-    height:100vh;
-      overflow-y:hidden;
-      
-    }
 
-    #wrapperOpeningSlide2{
+#wrapperSlide1{
+background-image: url("../../images/openingimage.jpg");
+background-size: cover;
+width:100%;
+height:100vh;
+overflow-y:hidden;
 
-    background-image: url("../../images/guestOne.jpg");
-    background-size: cover;
-    width:100%;
-    height:100vh;
-      overflow-y:hidden;
-    }
+}
+
+#wrapperOpeningSlide2{
+background-image: url("../../images/guestOne.jpg");
+background-size: cover;
+width:100%;
+height:100vh;
+overflow-y:hidden;
+}
 
 
-    #wrapperOpeningSlide3{
+#wrapperOpeningSlide3{
+background-image: url("../../images/guestTwo.jpg");
+background-size: cover;
+width:100%;
+height:100vh;
+overflow-y:hidden;
+}
 
-    background-image: url("../../images/guestTwo.jpg");
-    background-size: cover;
-    width:100%;
-    height:100vh;
-      overflow-y:hidden;
+#wrapperGuest{
+background-image: url("../../images/guestOne.jpg");
+width:100%;
+height:100vh;
+background-size: cover;
+}
 
-    }
-
-    #wrapperGuest{
-     
-    background-image: url("../../images/guestOne.jpg");
-    width:100%;
-       height:100vh;
-    background-size: cover;
-
-    }
-
-    #wrapperDate{   
-    background-image: url("../../images/guestTwo.jpg");
-    width:100%;
-       height:100vh;
-    background-size: cover;
-    }  
+#wrapperDate{   
+background-image: url("../../images/guestTwo.jpg");
+width:100%;
+height:100vh;
+background-size: cover;
+}  
 
 
 
 #wrapperConfirm{   
-    background-image: url("../../images/confirmimage.jpg");
-    width:100%;
-       height:100vh;
-    background-size: cover;
-    }  
+background-image: url("../../images/confirmimage.jpg");
+width:100%;
+height:100vh;
+background-size: cover;
+}  
+
+
 #wrapperMap{
-    background-image: url("../../images/wrapperimageMap.jpg");
-  width:100%;
-       height:100vh;
-    background-size: cover;
-}
-
-/*logo
-*/.logo{
-    height:50px;
-    width:100px;
-    
+background-image: url("../../images/wrapperimageMap.jpg");
+width:100%;
+height:100vh;
+background-size: cover;
 }
 
 
-.logo:hover {
-    background: white;
-    opacity: 1.0;
+#confirmationPage{
+    border:solid black;
 }
 
-/*border*/
-
-.borderBlack{
-    height:50px;
-    background-color:black;
-}
-
-.borderBlackFooter {
-    height:50px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-}
+// /*Confirmation page/accom options*/
 
 
-/*Confirmation page/accom options*/
-
-.confirmationPage{
-    width: 40%;
-    height:60%;
-    top:15%;
-    position: relative;
-    margin-left: 30%;
-    text-align: center;
-    /* opacity: 0.5;*/
-    
-}
 
 .confirmationPage:hover{
-      color:white;
-   opacity: 0.9;
-    transition: .5s ease;
+color:white;
+opacity: 0.9;
+transition: .5s ease;
 }
 
 .confimrationContent{
-   padding:2%;
-   margin:auto;
+padding:2%;
+margin:auto;
 }
 
 
@@ -144,127 +110,8 @@ position: absolute;
 }
 
 
-  .fastScroll{
-            height : 100vh;
-            /*overflow: hidden;*/
-        }
-        #fastScrollsection{
-            height : 50vh;
-        }
-  /*     #fastScroll section h1{
-            margin:0;
-            padding:0;
-            text-align: center;
-            line-height: 100vh;
-            font-size:10em;
-            text-transform: uppercase;
-        }*/
-    
-           .fastScroll section:nth-child(1) {
-          /*  background: url('images/guestOne.png');*/
-            background-size:cover;
-        }
-
-        .fastScroll section:nth-child(2) {
-         /*   background: url('images/guestOne.png');*/
-            background-size:cover;
-        }
-        #fastScroll section:nth-child(3) {
-            /*background: url('images/guestTwo.png');*/
-            background-size:cover;
-
-        }
-
-          #fastScroll section:nth-child(4) {
-            /*background: url('images/guestTwo.png');*/
-            background-size:cover;
-
-        }
-
-    .mapContainer{
-    padding:10%;
-    }
-@media (min-width:768px) and (max-width: 1024px) {
 
 
-#wrapperOpening{
-/*      background-image: url("../../images/openingimage.jpg");*/
-    /* background-size: cover; */
-    background-position: center;
-    width: 100%;
-    height: 100vh;
-    /* overflow-y: hidden; */
+.mapContainer{
+padding:10%;
 }
-
-#wrapperGuest{
-   /*    background-image: url("../../images/guestOne.jpg");*/
-   
-    background-position: center;
-    height: 100vh;
-  
-}
-/*.map__modal{
-    width:90%;
-    height:90%;
-}
-*/
-.dropdown-item {
-    color: white;
-    text-align: center;
-    outline: none;
-
-}
-
-}
-
-
-
-
-.MapContainer {
-    height: 70%;
-     width: 80%; 
-    margin-top: 12%;
-    margin-left:7%;
-    border: blue 1px solid;
-    margin-right: 0%;
-}
-#map{
-    height:55%;
-}
-
-
-
-
-
-
-@media (min-width:320px) and (max-width: 568px) {
-
-.confirmationPage {
-    width: 80%;
-    height: 60%;
-    top: 15%;
-    position: relative;
-   margin:auto;
-    text-align: center;
-    /* opacity: 0.5; */
-}
-.MapContainer {
-    height: 56%;
-    width: 89%;
-    margin-top: 19%;
-    margin-left: 6%;
-}
-#mapBack {
-    background-color: black;
-    color: white;
-    border: black 1px solid;
-    height: 30px;
-    width: 100px;
-    float: right;
-    margin-top: 5%;
-    margin-right: 9%;
-}
-
-}
-
-

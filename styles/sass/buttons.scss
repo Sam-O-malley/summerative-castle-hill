@@ -1,0 +1,137 @@
+.mainButton {
+    background-color: transparent;
+    border-color: none;
+    box-shadow: none;
+    width: 100%;
+    margin-top: 25%;
+    font-family: 'Comfortaa', cursive;
+    font-size: 50px;
+     position: relative;
+     color:white;
+
+}
+
+.mainButton:focus,.mainButton:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+.btn-primary,.mainButton:hover {
+    color:transparent;
+    background-color: transparent;
+    border-color: transparent;
+    outline: transparent;
+    transition: 2s;
+    opacity: 1;
+
+}
+
+button.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+color: transparent;
+background-color:transparent; 
+border-color: transparent;
+outline: none;
+}
+
+button .btn .btn-primary-outline{
+color: transparent;
+outline: none;
+background-color: !important white; 
+border-color: transparent;
+}
+
+
+#button__opening:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: red;
+  visibility: hidden;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: .55s linear;
+}
+#button__opening:hover:before,
+#button__opening:focus:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+
+.btn-primary {
+   color: white;
+   background-color: transparent;
+  border-color: transparent;
+  width:100%;
+}
+
+#accom-dropdown:hover {
+  color: #fff; 
+  background-color: white; 
+  opacity: 1;
+  border-color:transparent; 
+}
+
+// .btn-primary{
+// color: white;
+// background-color: transparent;
+//  border-color:none;
+//  transition: none;
+// }
+ 
+.input_text{
+    text-align: center;
+}
+
+  .input_field{
+      width:100%;
+      text-align:center;
+  }
+  
+
+.back_button{
+    color:white;
+    border: white 1px solid;
+    background-color: transparent; 
+    height: 50px;
+    width: 150px;
+    margin-top: 2%;
+    margin-left: 85%;
+    border-radius: 10%;
+
+}
+
+
+  
+  #confirmBack:hover{
+      background-color: white;
+    cursor: pointer;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+  }
+  
+  
+  #DateBack:hover{
+      background-color: white;
+    cursor: pointer;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+  }
+  
+  
+  #mapBack:hover{
+      background-color: white;
+    cursor: pointer;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+  }
+  
